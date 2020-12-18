@@ -105,6 +105,7 @@ public class Main {
             for (Message m: allMessages){
                 m.getDetails();
                 System.out.println("***********");
+
             }
             }else {
             System.out.println("You do not have any message");
@@ -115,11 +116,11 @@ public class Main {
     private static void manageContacts() {
 
         System.out.println("Select the option:" +
-                "\t1. Show all contacts" +
-                "\t2. Add a new contact" +
-                "\t3. Search for a contact" +
-                "\t4. Delete a contact" +
-                "\t5. Go back");
+                "\n\t1. Show all contacts" +
+                "\n\t2. Add a new contact" +
+                "\n\t3. Search for a contact" +
+                "\n\t4. Delete a contact" +
+                "\n\t5. Go back");
 
         int choice = scanner.nextInt();
         switch (choice){
@@ -189,7 +190,7 @@ public class Main {
     }
 
     private static void addContact() {
-        System.out.println("Adding a new contact..." +
+        System.out.println("Adding a new contact...\n" +
                 "Please enter the contact name: ");
         String name = scanner.next();
 
@@ -234,8 +235,7 @@ public class Main {
                 }
             }else{
             System.out.println("You do not have any contact.");
-            showMenu();
         }
-
+        showMenu();
     }
 }
